@@ -4,7 +4,8 @@
 #include "user.hpp"
 
 // User表的数据操作类
-class UserModel {
+class UserModel
+{
 public:
     // User表的增加方法
     bool insert(User &user);
@@ -17,6 +18,7 @@ public:
 
     // 重置用户的状态信息
     void resetState();
+private:
+    
 };
-
 #endif

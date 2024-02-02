@@ -4,16 +4,13 @@
 #include <string>
 using namespace std;
 
-// User表的ORM类
+// 匹配User表的ORM类(映射关系类)
 class User
 {
 public:
     User(int id = -1, string name = "", string pwd = "", string state = "offline")
+        : id(id), name(name), password(pwd), state(state)
     {
-        this->id = id;
-        this->name = name;
-        this->password = pwd;
-        this->state = state;
     }
 
     void setId(int id) { this->id = id; }

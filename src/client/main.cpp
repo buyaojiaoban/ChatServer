@@ -146,7 +146,7 @@ int main(int argc, char **argv)
             char name[50] = {0};
             char pwd[50] = {0};
             cout << "username:";
-            cin.getline(name, 50);
+            cin.getline(name, 50); // 默认遇见回车才结束 zhang san 可读取到空格
             cout << "userpassword:";
             cin.getline(pwd, 50);
 

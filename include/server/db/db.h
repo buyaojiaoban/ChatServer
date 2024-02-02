@@ -1,9 +1,11 @@
 #ifndef DB_H
 #define DB_H
 
+
 #include <mysql/mysql.h>
 #include <string>
 using namespace std;
+
 
 // 数据库操作类
 class MySQL
@@ -21,6 +23,7 @@ public:
     MYSQL_RES *query(string sql);
     // 获取连接
     MYSQL* getConnection();
+
 private:
     MYSQL *_conn;
 };
